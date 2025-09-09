@@ -141,7 +141,7 @@ mod tests {
         }
     }
 
-    // TODO: make this work | generic constraints
+    // TODO: make this work | generic constraints | new version of compiler that deprecated old syntax 
     // fn fight<T1, T2>(ref opponent_1: T1, ref opponent_2: T2) -> Result<(), ByteArray> {
     //     if !opponent_1.is_alive() || !opponent_2.is_alive() {
     //         return Result::Err("One of the opponents is not alive");
