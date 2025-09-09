@@ -8,3 +8,4 @@ mod mutable;
 mod snapshots;
 mod references;
 mod copy_trait;
+mod traits;
