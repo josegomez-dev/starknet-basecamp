@@ -3,3 +3,4 @@ mod functions;
 mod integers;
 mod casting;
 mod result_and_option;
+mod enums;

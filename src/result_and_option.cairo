@@ -32,4 +32,32 @@ mod tests {
             Result::Ok(_) => assert!(false),
         }
     }
+
+    #[test]
+    fn test_divide_by_non_zero_should_fail_match_with_err_message() {
+        let result: Result<u32, ByteArray> = divide(10, 0);
+        match result {
+            Result::Err(error) => assert!(error == "Division by zero"),
+            Result::Ok(_) => assert!(false),
+        }
+    }
+
+    #[test]
+    fn test_divide_by_non_zero_should_fail_shorthand() {
+        let result: Result<u32, ByteArray> = divide(10, 0);
+        match result {
+            Err(_) => assert!(true),
+            Ok(_) => assert!(false),
+        }
+    }
+
+    #[test]
+    fn test_divide_by_non_zero_should_error_match_default() {
+        let result: Result<u32, ByteArray> = divide(10, 0);
+        match result {
+            Err(_) => assert!(true),
+            _ => assert!(false),
+        }
+    }
+
 }
