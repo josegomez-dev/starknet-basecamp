@@ -7,3 +7,4 @@ mod enums;
 mod mutable;
 mod snapshots;
 mod references;
+mod copy_trait;
